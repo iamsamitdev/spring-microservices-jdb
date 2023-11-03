@@ -1,0 +1,3 @@
+com\itgenius\openfeign\OpenfeignApplication.class
+com\itgenius\openfeign\controller\OpenFeignController.class
+com\itgenius\openfeign\common\internal\InternalServiceClient.class

@@ -1,0 +1,33 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: department-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/DepartmentDB?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver # MySQL Driver Class
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect # MySQL Dialect
+        format_sql: true
+        default_schema: DepartmentDB
+  config:
+    import: "optional:configserver:http://localhost:9002"
+  cloud:
+    config:
+      name: department
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/

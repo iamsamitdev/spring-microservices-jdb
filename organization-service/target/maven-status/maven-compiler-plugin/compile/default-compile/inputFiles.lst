@@ -1,0 +1,7 @@
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\organization\model\Organization.java
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\organization\controller\OrganizationController.java
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\organization\repository\OrganizationRepository.java
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\OrganizationServiceApplication.java
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\department\model\Department.java
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\employee\model\Employee.java
+D:\TrainingWorkshop\SpringMicroServiceJDB\spring-microservices\organization-service\src\main\java\com\itgenius\organizationservice\organization\service\OrganizationService.java

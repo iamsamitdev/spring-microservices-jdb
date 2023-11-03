@@ -1,0 +1,7 @@
+com\itgenius\departmentservice\department\controller\DepartmentController.class
+com\itgenius\departmentservice\DepartmentServiceApplication.class
+com\itgenius\departmentservice\department\model\Department.class
+com\itgenius\departmentservice\department\service\DepartmentService.class
+com\itgenius\departmentservice\department\repository\DepartmentRepository.class
+com\itgenius\departmentservice\employee\client\EmployeeClient.class
+com\itgenius\departmentservice\employee\model\Employee.class

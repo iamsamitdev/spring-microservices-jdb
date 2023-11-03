@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-proxy
+  config:
+    import: "optional:configserver:http://localhost:9002"
+  cloud:
+    gateway:
+      routes:
+        - id: employee-service
+          uri: lb://employee-service
+          predicates:
+            - Path=/employee-service/**
+          filters:
+            - StripPrefix=1
+        - id: department-service
+          uri: lb://department-service
+          predicates:
+            - Path=/department-service/**
+          filters:
+            - StripPrefix=1  
+        - id: organization-service
+          uri: lb://organization-service
+          predicates:
+            - Path=/organization-service/**
+          filters:
+            - StripPrefix=1
+          
+    config:
+      name: gateway
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
